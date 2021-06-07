@@ -1,0 +1,22 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+@import '../../styles/variables/spacings/spacing';
+
+.CardDetails-Description{
+  width: 90vw;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 8px;
+  padding: $spacing-4;
+
+  .CardDetails-Description-line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: $spacing-1 0;
+  }
+}

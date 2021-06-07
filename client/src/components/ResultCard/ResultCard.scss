@@ -1,0 +1,26 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+@import '../../styles/variables/spacings/spacing';
+
+
+.resultCard{
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2% 1%;
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: $white;
+  cursor: pointer;
+
+  .resultCard-category{
+    @include overline;
+  }
+
+  .resultCard-name{
+    @include H4;
+    margin: $spacing-2 0;
+  }
+}

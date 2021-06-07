@@ -1,0 +1,53 @@
+@import '../../styles/variables/colors/colors';
+@import '../../styles/variables/mixins/font-style';
+@import '../../styles/variables/spacings/spacing';
+
+
+.Search-Loading{
+  margin: 48vh auto;
+  @include H4;
+  color: $white;
+  text-align: center;
+}
+
+.Search-Header{
+  width: 90vw;
+  display: flex;
+  padding: 10vh 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+
+  .Search-Header--title{
+    @include H1;
+    color: $white;
+  }
+
+  .Search-Header--button{
+    @include body-1;
+    color: $black;
+    background-color: $white;
+    padding: $spacing-1 $spacing-2;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .Search-Header--input{
+    color: $white;
+    border-radius: 8px;
+    border: 0;
+    padding: $spacing-2 $spacing-3;
+    width: 300px;
+    color: $black;
+  }
+}
+
+.Search-Results{
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
