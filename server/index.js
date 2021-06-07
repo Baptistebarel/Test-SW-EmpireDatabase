@@ -2,9 +2,12 @@ const Hapi = require('@hapi/hapi');
 const fetch = require("node-fetch");
 
 const init = async () => {
-  
-    const server = new Hapi.Server(+process.env.PORT, '0.0.0.0');
-    
+
+    const server = Hapi.server({
+        port: 3001,
+        host: 'localhost'
+    });
+
     server.route({
       method: 'GET',
       path:'/api',
